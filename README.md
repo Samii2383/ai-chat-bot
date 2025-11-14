@@ -25,6 +25,10 @@ A modern, full-stack AI chatbot application with a beautiful ChatGPT-like interf
 
 **Note**: Replace with your actual Vercel deployment URL after deployment.
 
+## 📦 Repository
+
+**GitHub**: [https://github.com/Samii2383/ai-chat-bot](https://github.com/Samii2383/ai-chat-bot)
+
 ## 📋 Prerequisites
 
 - Node.js (v14.0.0 or higher)
