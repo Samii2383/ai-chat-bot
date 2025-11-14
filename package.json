@@ -1,0 +1,24 @@
+{
+  "name": "ai-chatbot-automation-system",
+  "version": "1.0.0",
+  "description": "AI Chatbot with React frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": ["ai", "chatbot", "react", "express", "openai"],
+  "author": "Sameer Khan",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
+
