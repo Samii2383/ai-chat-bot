@@ -1,7 +1,14 @@
 // Vercel serverless function wrapper for Express app
-// This file allows Vercel to use the Express app as a serverless function
 const app = require('../server/server.js');
 
-// Export the Express app for Vercel
-module.exports = app;
+// Export handler for Vercel serverless functions
+module.exports = (req, res) => {
+  // Vercel serverless functions don't need the /api prefix in the path
+  // So we need to adjust the request path
+  const originalUrl = req.url;
+  req.url = `/api${originalUrl}`;
+  
+  // Handle the request with Express
+  app(req, res);
+};
 
